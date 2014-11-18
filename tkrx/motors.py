@@ -31,6 +31,9 @@ from RPIO import PWM
 from settings import *
 
 def set_motor_speed(dma_buf, pin, speed):
+    if speed==0:
+        PWM.clear_channel_gpio(dma_buf, pin)
+        return
     pulse_width = 650 + speed/100*(1000-650)
     PWM.add_channel_pulse(dma_buf, pin, 0, pulse_width)
 
