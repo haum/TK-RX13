@@ -34,6 +34,10 @@ def setup():
     PWM.setup()
     PWM.init_channel(DMA_LEFT,10000)
     PWM.init_channel(DMA_RIGHT,10000)
+    PWM.add_channel_pulse(DMA_LEFT, LEFT_FORWARD, 0, 0)
+    PWM.add_channel_pulse(DMA_LEFT, LEFT_BACKWARD, 0, 0)
+    PWM.add_channel_pulse(DMA_RIGHT, RIGHT_FORWARD, 0, 0)
+    PWM.add_channel_pulse(DMA_RIGHT, RIGHT_BACKWARD, 0, 0)
 
 
 
