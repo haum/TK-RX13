@@ -27,13 +27,13 @@
 
 """
 
-import RPIO
-from settings import DMA_LEFT, DMA_RIGHT
+from RPIO import PWM
+from settings import *
 
 def setup():
-    RPIO.PWM.setup()
-    RPIO.PWM.init_channel(DMA_LEFT,10000)
-    RPIO.PWM.init_channel(DMA_RIGHT,10000)
+    PWM.setup()
+    PWM.init_channel(DMA_LEFT,10000)
+    PWM.init_channel(DMA_RIGHT,10000)
 
 
 

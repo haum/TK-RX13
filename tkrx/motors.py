@@ -27,25 +27,25 @@
 
 """
 
-import RPIO
+from RPIO import PWM
 from settings import *
 
 def set_motor_speed(dma_buf, pin, speed):
     pulse_width = 650 + speed/100*(1000-650)
-    RPIO.PWM.add_channel_pulse(dma_buf, pin, 0, pulse_width)
+    PWM.add_channel_pulse(dma_buf, pin, 0, pulse_width)
 
 def left_speed(speed):
     if speed <0:
-        RPIO.PWM.clear_channel_gpio(DMA_LEFT, LEFT_FORWARD)
+        PWM.clear_channel_gpio(DMA_LEFT, LEFT_FORWARD)
         set_motor_speed(DMA_LEFT, LEFT_BACKWARD, -speed)
     else:
-        RPIO.PWM.clear_channel_gpio(DMA_LEFT, LEFT_BACKWARD)
+        PWM.clear_channel_gpio(DMA_LEFT, LEFT_BACKWARD)
         set_motor_speed(DMA_LEFT, LEFT_FORWARD, speed)
 
 def right_speed(speed):
     if speed <0:
-        RPIO.PWM.clear_channel_gpio(DMA_RIGHT, RIGHT_FORWARD)
+        PWM.clear_channel_gpio(DMA_RIGHT, RIGHT_FORWARD)
         set_motor_speed(DMA_RIGHT, RIGHT_BACKWARD, -speed)
     else:
-        RPIO.PWM.clear_channel_gpio(DMA_RIGHT, RIGHT_BACKWARD)
+        PWM.clear_channel_gpio(DMA_RIGHT, RIGHT_BACKWARD)
         set_motor_speed(DMA_RIGHT, RIGHT_FORWARD, speed)
