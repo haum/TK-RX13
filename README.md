@@ -1,8 +1,8 @@
 TK-RX13
 =======
 
-    Hey, les gars ! J'ai ramené un tank !
-    -- Augustin DL
+> Hey, les gars ! J'ai ramené un tank !
+> -- Augustin DL
 
 TK-RX13 est un tank, amené au HAUM par Augustin, d'ATC-it.
 A peine arrivé, déjà démonté : le tank est dépecé, vidé de son intérieur et nettoyé.
