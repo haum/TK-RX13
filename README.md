@@ -18,25 +18,21 @@ Le HAUM de son côté a ajouté :
 - les faisceaux de câbles
 - les interfaces vers les GPIO
 
-Ce qui est fait
----------------
-
-- Dépecer le tank
-- Nettoyer (en partie) le tank
-- Motoriser les chenilles
-- Installer le RPi
-- Installer le faisceau GPIO
-- Ecrire un bout d'abstraction pour les moteurs
-
-Ce qui reste à faire
+Ce qu'il y a à faire
 --------------------
 
-- Motoriser la tourelle (mouvements horiz./vert.)
-- Faire tirer le tank (moteur dans le canon, mais comment le faire fonctionner ?)
-- Renvoyer les LEDs de l'avant
-- Câbler le HP
-- Vérifier le couplage moteur/chenille à droite (problème de jeu)
-- Ecrire la fin du code :)
-- Préparer un serveur SSH sur le RPi
-- Paramétrer le RPi comme un point d'accès Wifi
+- [x] Dépecer le tank
+- [x] Nettoyer (en partie) le tank
+- [x] Motoriser les chenilles
+- [x] Installer le RPi
+- [x] Installer le faisceau GPIO
+- [x] Ecrire un bout d'abstraction pour les moteurs
+- [ ] Motoriser la tourelle (mouvements horiz./vert.)
+- [ ] Faire tirer le tank (moteur dans le canon, mais comment le faire fonctionner ?)
+- [ ] Renvoyer les LEDs de l'avant
+- [ ] Câbler le HP
+- [ ] Vérifier le couplage moteur/chenille à droite (problème de jeu)
+- [ ] Ecrire la fin du code :)
+- [ ] Préparer un serveur SSH sur le RPi
+- [ ] Paramétrer le RPi comme un point d'accès Wifi
 
